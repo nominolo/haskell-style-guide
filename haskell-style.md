@@ -105,11 +105,13 @@ your judgement. Some examples:
 2. Imports
 ----------
 
-Imports should be grouped in the following order:
+Imports should be grouped and ordered from most specific to least
+specific, i.e.:
 
-1. standard library imports
-2. related third party imports
-3. local application/library specific imports
+1. same module hierarchy level
+2. local application/library specific imports
+3. related third party imports
+4. standard library imports
 
 Put a blank line between each group of imports.  The imports in each
 group should be sorted alphabetically, by module name.
