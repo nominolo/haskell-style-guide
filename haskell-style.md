@@ -237,3 +237,12 @@ use smart constructors to enforce the invariant.  For example:
     mkBranch Empty t = t
     mkBranch t Empty = t
     mkBranch l r     = Branch l r
+
+### Type Signatures ###
+
+Every top-level function should have a type signature.  If a function
+has local functions, consider adding type signatures there, too.  In
+Haskell'98 this is sometimes impossible, but with GHC you can use
+[`{-# LANGUAGE ScopedTypeVariables #-}`][1].
+
+ [1]: http://hackage.haskell.org/trac/haskell-prime/wiki/ScopedTypeVariables
