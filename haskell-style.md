@@ -63,13 +63,33 @@ Align the constructors in a data type definition.  Example:
     data Tree a = Branch a (Tree a) (Tree a)
                 | Leaf
 
+or, if the declaration of the constructor is longer
+
+    data Tree a
+      = Branch a (Tree a) (Tree a)
+      | Leaf
+
 Format records as follows:
 
     data Person = Person
-        { firstName :: String  -- ^ First name
-        , lastName  :: String  -- ^ Last name
-        , age       :: Int     -- ^ Age
-        } deriving (Eq, Show)
+      { firstName :: String  -- ^ First name
+      , lastName  :: String  -- ^ Last name
+      , age       :: Int     -- ^ Age
+      } deriving (Eq, Show)
+
+or
+
+    data Person
+      = Person
+          { firstName :: String  -- ^ First name
+          , lastName  :: String  -- ^ Last name
+          , age       :: Int     -- ^ Age
+          }
+      | Martian
+          { name :: String
+          , age  :: Int
+          }
+      deriving (Eq, Show)
 
 ### Pragmas
 
