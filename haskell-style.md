@@ -169,9 +169,9 @@ Comment every exported data type.  Some examples:
 
     -- | Bla bla bla.
     data Person = Person
-        { age  :: Int     -- ^ Age
-        , name :: String  -- ^ First name
-        }
+      { age  :: Int     -- ^ Age
+      , name :: String  -- ^ First name
+      }
 
 For functions the documentation should give enough information to
 apply the function without looking at the functions definition.
@@ -209,6 +209,7 @@ If a function takes several arguments and ignores some of them, do not
 use a simple `_` as the pattern.  Give it a descriptive name and
 precede it with an underscore, for example
 
+    foo :: Env -> Expr -> Int -> Int
     foo _env expr accum = ...
 
 5. Misc
