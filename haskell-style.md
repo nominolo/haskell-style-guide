@@ -202,6 +202,14 @@ For readability reasons, don't capitalize all letters when using an
 abbreviation.  For example, write `HttpServer` instead of
 `HTTPServer`.  Exception: Two letter abbreviations, e.g. `IO`.
 
+### Ignored arguments
+
+If a function takes several arguments and ignores some of them, do not
+use a simple `_` as the pattern.  Give it a descriptive name and
+precede it with an underscore, for example
+
+    foo _env expr accum = ...
+
 5. Misc
 -------
 
