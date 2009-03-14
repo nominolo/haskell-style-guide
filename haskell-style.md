@@ -145,8 +145,9 @@ changes in these libraries.  Exception: The Prelude.
 
 ### Line Length
 
-Maximum line length is *70 characters*.  This increases readability as
-the eye has to travel back to the start of the next line.
+Maximum line length for comments is *70 characters*.  This increases
+readability as the eye has to travel back to the start of the next
+line.
 
 ### Punctuation
 
