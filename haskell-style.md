@@ -25,9 +25,9 @@ Maximum line length is *80 characters*.
 ### Indentation
 
 Tabs are illegal. Use spaces for indenting.  Indent your code blocks
-with *4 spaces*.  Indent the `where` keyword two spaces to set it
-apart from the rest of the code and indent the definitions in a
-`where` clause 2 spaces. Some examples:
+with *4 spaces*.  Indent guards with two spaces. Indent the `where`
+keyword two spaces to set it apart from the rest of the code and
+indent the definitions in a `where` clause 2 spaces. Some examples:
 
     sayHello :: IO ()
     sayHello = do
@@ -39,8 +39,8 @@ apart from the rest of the code and indent the definitions in a
     filter :: (a -> Bool) -> [a] -> [a]
     filter _ []     = []
     filter p (x:xs)
-        | p x       = x : filter p xs
-        | otherwise = filter p xs
+      | p x       = x : filter p xs
+      | otherwise = filter p xs
 
 ### Blank Lines
 
