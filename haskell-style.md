@@ -217,3 +217,21 @@ precede it with an underscore, for example
 
 Code should be compilable with `-Wall -Werror`. There should be no
 warnings.
+
+### Invariants ###
+
+Document invariants in the data type description.  Wherever possible
+use smart constructors to enforce the invariant.  For example:
+
+    -- | A binary tree.
+    --
+    -- INVARIANT: 'Empty' may only occur at the top-level.
+    data BinTree a
+      = Empty
+      | Branch (BinTree a) (BinTree a)
+      | Leaf a
+
+    mkBranch :: BinTree a -> BinTree a -> BinTree a
+    mkBranch Empty t = t
+    mkBranch t Empty = t
+    mkBranch l r     = Branch l r
