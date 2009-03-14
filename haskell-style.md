@@ -152,7 +152,7 @@ line.
 ### Punctuation
 
 Write proper sentences; start with a capital letter and use proper
-punctuation.
+punctuation.  Use a spell-checker if possible.
 
 ### Top-Level Definitions
 
